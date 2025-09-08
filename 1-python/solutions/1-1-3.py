@@ -10,3 +10,10 @@ otherwise we want it closed
 write code to simulate this
 '''
 
+pressure = int(input("whats the door pressure? "))
+if pressure <10:
+    print("Not open")
+
+else:
+    print("Open!")
+
