@@ -182,13 +182,13 @@ Based on the assignments in this course and our specified learning outcomes, the
 | 11 | 11/3 | 11/5 | 11/9 |
 |    | Web Scraping 5-1 | Web Scraping 5-2 | Assignment 6 (A6) |
 | 12 | 11/10 | 11/12 | 11/16 |
-|   | Web Scraping 5-3 | Web Scraping 5-4 | Assignment 7 (A7) |
+|   | Web Scraping 5-1 | Web Scraping 5-2-5-4 |  |
 | 13 | 11/17 | 11/19 | 11/22 |
-|   | Data Visualization 6-1 | Data Visualization 6-2  | Assignment 8 (A8) |
+|   | Data Visualization 6-1 | Data Visualization 6-2  | Assignment 7 (A7) |
 | 14 | 11/24 | 11/26 | 11/30 |
 |   | No Class: Thanksgiving | No Class: Thanksgiving |  |
 | 15 | 12/1 | 12/3 | 12/7 |
-|   | Data Visualization 6-3 | Data Visualization 6-4 | Project Plan |
+|   | Data Visualization 6-3 | Data Visualization 6-4 | Project Plan & Assign 8 (A8) |
 | 16 | 12/8 | 12/10 | 12/14 |
 |   | EXAM 2 (E2) | Work on Final Project | Work on Final Project  |
 | 17 | 12/16 | 12/18 | 12/20 |
