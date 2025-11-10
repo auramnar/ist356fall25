@@ -6,7 +6,9 @@ app = FastAPI()  # Create a FastAPI instance
 def root():      # Define a function that will be called when the route is requested
     return {"message": "Hello World"} # Serializes to JSON automatically
 
-
+@app.get("/hi/{name}")
+def say_hi(name:str):
+    return{'message': f'HI, {name}'}
 
 
     
