@@ -1,10 +1,10 @@
 from fastapi import FastAPI, Body, HTTPException
 import requests
 
-apikey = ""
+apikey = "8fe085f6a8b8733c7cff9b0b"
 
 def tldr_openai(text):
-    url = "https://cent.ischool-iot.net/api/openai/chat/completions"
+    url = "https://cent.ischool-iot.net/api/genai/chat/completions"
     headers = {
         "X-API-KEY" : apikey
     }
