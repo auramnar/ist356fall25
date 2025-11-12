@@ -29,3 +29,5 @@ def run(playwright: Playwright) -> None:
 
 with sync_playwright() as playwright:
     run(playwright)
+    
+download_image("https://a.espncdn.com/photo/2025/1111/r1574203_1296x729_16-9.jpg")
