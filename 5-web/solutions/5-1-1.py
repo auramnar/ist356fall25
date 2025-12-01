@@ -12,7 +12,7 @@ def run(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
     page = context.new_page()
-    page.goto("https://ist256.com/fall2023/about/")
+    page.goto("python -m playwright  install chromium --with-deps")
     
     # Let us scrape the heading of this page
     heading = page.query_selector("h1#about-ist256")
