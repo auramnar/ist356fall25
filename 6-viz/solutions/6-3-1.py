@@ -27,3 +27,8 @@ df_filtered = df_dropped[df_dropped['status'] == status] # filter dataframe base
 
 df_sample = df_filtered.sample(10) 
 
+for i, row in df_sample.iterrows():
+    lat, lon = row['coords'].strip("(").strip(")").split(",")
+    lat = float(lat.replace(" ", ""))
+    lon = float(lon.replace(" ", ""))
+    color = days[row['daysofweek']] # add color based on day of week
