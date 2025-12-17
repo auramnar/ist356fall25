@@ -126,7 +126,7 @@ The project is your opportunity to demonstrate what you have learned in an exper
 
 | Assessment | Type | Learning Outcomes | Quantity | Points Each | Points Percent |
 |------------|------|-------------------|----------|-------------|--------------|
-| Attendance | Formative | 1, 2 | 15 | 1 | 15 |
+| Attendance/Activities | Formative | 1, 2 | 15 | 1 | 15 |
 | Assignments | Formative | 1, 2 | 8 | 3.1 | 25 |
 | Exams | Summative | 3, 4 | 2 | 20 | 40 |
 | Project | Summative | 5 | 1 | 20 | 20 |
