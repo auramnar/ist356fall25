@@ -16,3 +16,7 @@ df = pd.DataFrame(
 print(df)
 
 print(df.loc['a':'b', 's1':'s2'])
+
+twoqs = df.loc['a' : 'b', 's3']
+
+print(df.loc['c':'d', 's2:'s3'])
