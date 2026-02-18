@@ -14,11 +14,11 @@ concat the list of departments together one dataframe
 print dataframe
 
 df_list = []
-for key in employees.keys():
-    df = pd.DataFrame(employees[key])
-    df['department'] = key
-    df_list.append(df)
-combined_df = pd.concat(df_list)
+for key in employees.keys(): # key becomes accounting, sales..
+    df = pd.DataFrame(employees[key]) # convert to dataframe
+    df['department'] = key # add a department column
+    df_list.append(df) # add each dept to the list
+combined_df = pd.concat(df_list) # combine
 st.dataframe(combined_df)
 
 
@@ -44,5 +44,6 @@ for dept_name in employees.keys():
 combined = pd.concat(departments, ignore_index=True)
 
 st.dataframe(combined)
+
 
 
