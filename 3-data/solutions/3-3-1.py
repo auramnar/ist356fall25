@@ -13,6 +13,12 @@ for each department:
 concat the list of departments together one dataframe
 print dataframe
 
+for
+
+
+df = pd.DataFrame(employees['accounting'])
+st.dataframe(df)
+
 '''
 
 
@@ -31,3 +37,4 @@ for dept_name in employees.keys():
 combined = pd.concat(departments, ignore_index=True)
 
 st.dataframe(combined)
+
