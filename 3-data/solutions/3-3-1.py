@@ -3,6 +3,8 @@ import numpy as np
 import requests
 import streamlit as st
 
+# online_students.rename(columns={"Name": "StudentName"}, inplace=True)
+
 '''
 for each department:
     create a dataframe for that department (e.g. from the json under the department)
@@ -27,4 +29,5 @@ for dept_name in employees.keys():
     departments.append(dept_employees)
     
 combined = pd.concat(departments, ignore_index=True)
+
 st.dataframe(combined)
