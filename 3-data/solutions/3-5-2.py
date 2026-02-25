@@ -44,7 +44,7 @@ measures = ['Completion_Time','Student_Score']
 exams = pd.read_csv(url)
 
 
-row = st.selectbox('Select a row', cols) # row selection
+row_select = st.selectbox('Select a row', cols) # row selection
 cols.remove(row) # remove the selected row from the list of columns to avoid duplication
 col = st.selectbox('Select a column', cols) # column selection
 value = st.selectbox('Display the Average', measures)
@@ -52,4 +52,5 @@ value = st.selectbox('Display the Average', measures)
 pivot_df = exams.pivot_table(index=row, columns=col, values=value, aggfunc='mean')
 
 st.dataframe(pivot_df)
+
 
