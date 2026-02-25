@@ -30,5 +30,7 @@ summary = exams.groupby(option).agg({'Class_Section': 'count', 'Student_Score':'
 # Averages the student scores in each group
 
 # reset index to turn the groupby index into a column
+summary = summary.reset_index()
 #summary = summary.rename(columns = {'Class_Section':'Student_Count', 'Student_Score':'Average Score'}) 
+
 st.dataframe(summary)
