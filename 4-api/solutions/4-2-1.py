@@ -36,6 +36,12 @@ def extract_entities(text: str)->dict:
 
 
 text = st.text_area("Enter text to extract entities:")
+# text = "I like sunny days"
+#result = extract_entities(text)
+#entities = result ['results']['documents'][0]['entities']
+#st.write(result)
+#st.write(entities)
+#df = pd.DataFrame(entities)
 
 # Complete code to call the function and display results
 if st.button("Extract Entities"): # create a button
