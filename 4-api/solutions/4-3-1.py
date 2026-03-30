@@ -32,6 +32,7 @@ def generate_ai_response(prompt: str) -> str:
 def spellcheck(text):
   prompt = "Spell check the following text"
   prompt += text "\n"
+  prompt += text + "\n"
   prompt += "for each misspelling provide one suggestion"
   #prompt += "return as a list of dictionaries in JSON format"
   check = generate_ai_response(prompt)
