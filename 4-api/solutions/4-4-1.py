@@ -20,8 +20,8 @@ def search_flights(type:str =Query(), code:str = Query()):
     else:
         return {}
 
-    json_flights = flights.to_json(orient='records') # string
-    return json.loads(json_flights)  # list of dicts
+    json_flights = flights.to_json(orient='records') # python string
+    return json.loads(json_flights)  # python list of dicts
 
 
         
