@@ -34,8 +34,8 @@ def run(playwright: Playwright) -> None:
         tag = heading.evaluate('el => el.tagName').lower()
         # get text content of the heading element using the inner_text() method.
         text = heading.inner_text()
-        if tag == "h2":
-            print(text)
+        if tag == "H3":
+            print(f"   text)
         else:
             print(f"\t {text}")    
 
