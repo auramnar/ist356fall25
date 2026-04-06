@@ -8,6 +8,9 @@ def tldr_openai(text):
     headers = {
         "X-API-KEY" : apikey
     }
+    # system message to set the behavior of the assistant. 
+    # You are controlling the task, output format, and behavior of the assistant.
+    # This teaches the model to refuse non-summary requests.
     data = [
         {
             "role": "system",
@@ -38,7 +41,7 @@ def tldr_openai(text):
             "content": text
         }
     ]
-    params = { "temperature" : 0.1 }
+    params = { "temperature" : 0.1 } # low temp means more consistent 
 
     response = requests.post(url, headers=headers, json=data, params=params)
     response
@@ -46,14 +49,14 @@ def tldr_openai(text):
     return result["choices"][0]["message"]['content']
 
 
-app = FastAPI()
+app = FastAPI() # creating a FASTAPI App
 
-@app.post("/tldr")
-def tldr(text: str = Body(embed=True)):
+@app.post("/tldr") # API route for the endpoint
+def tldr(text: str = Body(embed=True)): # expect a JSON like input. Long text. 
     '''
     Summarize a URL
     '''
-    print(text)
+    print(text) # show in terminal 
     try:
         return tldr_openai(text)
     except Exception as e:
