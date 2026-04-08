@@ -10,7 +10,8 @@ def run(playwright: Playwright) -> None:
     
     
     start_element = page.query_selector("h4#criteria-for-project-grade")
-    next_element = start_element.query_selector("~ *")
+    #print(start_element.inner.html())
+    next_element = start_element.query_selector("~ *") # you can chain .query_selector_all("li")
     bullet_element = next_element.query_selector_all("li")
     
     criteria = []
