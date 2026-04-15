@@ -13,5 +13,6 @@ sns.barplot(data=pengo, x="species",
             y="flipper_length_mm", 
             hue="sex", 
             estimator="mean",
+            errorbar = "sd"
             ax=series1).set_title("Total Count by Species")
 st.pyplot(figure) # use the Streamlit function to render the plot
